@@ -6193,24 +6193,27 @@ hr {
 /*=================== contact form start ====================*/
 /* line 45, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .contact-title {
-  font-size: 27px;
+  font-size: 48px;
   font-weight: 600;
   margin-bottom: 20px;
+  margin-left: 550px;
 }
 
 /* line 53, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .form-contact label {
   font-size: 14px;
+  margin-left: 40px;
 }
 
 /* line 57, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .form-contact .form-group {
   margin-bottom: 30px;
+  margin-left: 40px;
 }
 
 /* line 61, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .form-contact .form-control {
-  border: 1px solid #e5e6e9;
+  border: 1px solid #5c5c5c;
   border-radius: 0px;
   height: 48px;
   padding-left: 18px;
@@ -6235,6 +6238,10 @@ hr {
   border-radius: 0px;
   height: 100% !important;
 }
+.form-group.center {
+  text-align: center;
+}
+
 
 /*=================== contact form end ====================*/
 /* Contact Success and error Area css
