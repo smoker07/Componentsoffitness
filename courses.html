@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Components of Fitness | Services </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
@@ -182,11 +182,30 @@
     </section>
     <!-- Traning categories End-->
     <!--? video_start -->
-    <video width="1920" height="650" controls>
-        <source src="assets/componentsoffitness.mp4" type="video/mp4">
-        <!-- <source src="movie.ogg" type="video/ogg">
-      Your browser does not support the video tag. -->
-      </video>
+
+    <style>
+        .video-container {
+          max-width: 100%;
+          height: auto;
+        }
+    
+        video {
+          width: 100%;
+          height: auto;
+          border: 2px solid #333;
+          border-radius: 10px;
+        }
+      </style>
+    
+      <div class="video-container">
+        <video controls autoplay muted playsinline>
+          <source src="assets/Componentsoffitness.mp4" type="video/mp4">
+          <!-- <source src="video.webm" type="video/webm">
+          <source src="video.ogg" type="video/ogg"> -->
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
     <!-- video_end -->
     <!-- ? services-area -->
     <section class="services-area">

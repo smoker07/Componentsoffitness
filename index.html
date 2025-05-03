@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Components of Fitness</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes" />
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -289,7 +289,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-md-9 col-sm-10">
                     <div class="section-tittle text-center mb-100 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                        <h2>From Blog</h2>
+                        <h2>Blog</h2>
                     </div>
                 </div>
             </div>
@@ -326,21 +326,27 @@
     <!-- Blog Area End -->
     
     <style>
-        #video-banner {
-          /* position: fixed; */
-          top: 0;
-          left: 0;
-          z-index: 999;
-          width: 100%;
+        .video-container {
+          max-width: 100%;
           height: auto;
         }
+    
+        video {
+          width: 100%;
+          height: auto;
+          border: 2px solid #333;
+          border-radius: 10px;
+        }
       </style>
-      
-    <video id="video-banner" autoplay loop>
-        <source src="assets/componentsoffitness.mp4" type="video/mp4">
-        <source src="assets/componentsoffitness.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
+    
+      <div class="video-container">
+        <video controls autoplay muted playsinline>
+          <source src="assets/Componentsoffitness.mp4" type="video/mp4">
+          <!-- <source src="video.webm" type="video/webm">
+          <source src="video.ogg" type="video/ogg"> -->
+          Your browser does not support the video tag.
+        </video>
+      </div>
     <!-- video_end -->
     <!-- ? services-area -->
     <section class="services-area">
@@ -366,7 +372,7 @@
                         <div class="features-caption">
                             <h3>Phone</h3>
                             <p>+91 8476080018</p>
-                            <!-- <p>  (78) 267 256 2578</p> -->
+                            
                         </div>
                     </div>
                 </div>
