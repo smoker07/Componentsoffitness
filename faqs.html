@@ -3,12 +3,86 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Components of fitness | Gallery </title>
+    <title>Components of fitness | FAQs </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #717272;
+        margin: auto;
+        padding: 2px;
+        display: auto;
+        justify-content: center;
+      }
+  
+      .qa-container {
+        max-width: 1500px;
+        width: 100%;
+        background: white;
+        align-content: right;
+        padding: 5rem;
+        border-radius: 100px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+  
+      h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #0066f5;
+        font-size: 100px;
+      }
+  
+      details {
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        background-color: #f9fafb;
+      }
+  
+      summary {
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+        font-weight: 600;
+        list-style: none;
+        position: relative;
+      }
+  
+      summary::marker {
+        display: ruby;
+      }
+  
+      summary::after {
+        content: '+';
+        position: absolute;
+        right: 1.5rem;
+        font-size: 8rem;
+        transition: transform 0.3s ease;
+      }
+  
+      details[open] summary::after {
+        content: '-';
+        transform: rotate(180deg);
+      }
+  
+      .answer {
+        padding: 0 1.5rem 1rem;
+        color: #000000;
+        line-height: 5;
+        animation: fadeIn 0.3s ease-in-out;
+        
+      }
+  
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -23,13 +97,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome (for icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
-
 <body class="black-bg">
     <!-- ? Preloader Start -->
     <div id="preloader-active">
@@ -58,7 +126,9 @@
                             <nav>
                                 <ul id="navigation">
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html" target="_blank">About</a></li>
+                                    <li><a href="about.html" target="_blank">About</a><ul class="submenu">
+                                      <li><a href="FAQs.html" target="_blank">FAQs</a></li>
+                                  </ul></li>
                                     <li><a href="services.html" target="_blank">Services</a></li>
                                     <!-- <li><a href="pricing.html">Pricing</a></li> -->
                                     <li><a href="gallery.html" target="_blank">Gallery</a></li>
@@ -95,7 +165,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap hero-cap2 pt-70">
-                            <h2>Gallery</h2>
+                            <h2>FAQs</h2>
                         </div>
                     </div>
                 </div>
@@ -103,271 +173,232 @@
         </div>
     </div>
     <!-- Hero End -->
-</main>
-
-<style>
-    body {
-      transition: 0.3s, color 0.3s;
-    }
-
-    .accordion-button::after {
-      font-family: 'Font Awesome 6 Free';
-      font-weight: 900;
-      font-size: large;
-      content: "\f105";
-      transform: rotate(0deg);
-      transition: transform 0.3s;
-    }
-
-    .accordion-button:not(.collapsed)::after {
-      transform: rotate(90deg);
-    }
-
-    .dark-mode {
-      background-color: #121212;
-      color: #e0e0e0;
-    }
-
-    .dark-mode .accordion-button {
-      background-color: #1e1e1e;
-      color: #e0e0e0;
-    }
-
-    .dark-mode .accordion-body {
-      background-color: #222;
-      color: #ccc;
-    }
-
-    .toggle-btn {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-  </style>
-<!-- <button class="btn btn-dark toggle-btn" onclick="toggleDarkMode()">
-    <i class="fas fa-moon"></i> Toggle Dark Mode
-  </button> -->
-
-  <div class="container py-5">
-    <h1 class="text-center mb-4">Frequently Asked Questions</h1>
-    <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-            What is this FAQ for?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            This section provides commonly asked questions with smooth animations and accordion behavior.
+    <!-- <section class="team-area fix">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-18">
+                  <div class="section-tittle text-center mb-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                      <h2 >Frequently Asked Questions</h2>
+                  </div>
+              </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-            How does the animation work?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Bootstrap uses CSS transitions to animate the opening and closing of accordion panels.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-            Can I customize the style?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Absolutely! You can override Bootstrap styles with custom CSS, including dark mode, fonts, and icons.
-          </div>
-        </div>
-      </div>
-    </div>
+  </section> -->
+
+  <!-- FAQ Start -->
+  <div class="qa-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>What is the purpose of this page?</summary>
+      <div class="answer">This page displays frequently asked questions along with clear and concise answers for easy user reference.</div>
+    </details>
+
+    <details>
+      <summary>Is this layout mobile-friendly?</summary>
+      <div class="answer">Yes! The layout is responsive and stacks nicely on smaller screens for better readability.</div>
+    </details>
+
+    <details>
+      <summary>Can I customize the colors and fonts?</summary>
+      <div class="answer">Absolutely. The design is built using pure CSS, so you can change fonts, spacing, and colors easily.</div>
+    </details>
+
+    <details>
+      <summary>Do I need JavaScript for this layout?</summary>
+      <div class="answer">No JavaScript is required. This interactive layout is entirely powered by HTML and CSS.</div>
+    </details>
   </div>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      function toggleDarkMode() {
-        document.body.classList.toggle('dark-mode');
-      }
-    </script>
-<main>
+  
+    
+
+    
+<!-- <script>
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const faqItem = button.parentElement;
+      faqItem.classList.toggle('active');
+
+      // Optionally close other open items
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+        }
+      });
+    });
+  });
+</script> -->
 
 
-    <!-- ? services-area -->
-    <section class="services-area">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services mb-40">
-                        <div style="width: 78px; height: 78px; background-color: red; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-map-marker-alt" style="color: white; font-size: 36px;"></i>
-                          </div>
-                        <div class="features-caption">
-                            <h3>Location</h3>
-                            <p>Plot 59, Shakti Khand 2, Indirapuram, Ghaziabad, Uttar Pradesh - 201014</p>
+     <!-- ? services-area -->
+     <section class="services-area">
+      <div class="container">
+          <div class="row justify-content-between">
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                  <div class="single-services mb-40">
+                      <div style="width: 78px; height: 78px; background-color: red; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                          <i class="fas fa-map-marker-alt" style="color: white; font-size: 36px;"></i>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services mb-40">
-                        <div style="width: 78px; height: 78px; background-color: red; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-phone" style="color: white; font-size: 36px;"></i>
-                             </div>
-                        <div class="features-caption">
-                            <h3>Phone</h3>
-                            <p>+91 8476080018</p>
-                            <!-- <p>  (78) 267 256 2578</p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services mb-40">
-                        <div class="features-icon">
-                            <img src="assets/img/icon/icon3.svg" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <h3>Email</h3>
-                            <p>componentsoffitness7@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-<footer>
-    <!--? Footer Start-->
-    <div class="footer-area black-bg">
-        <div class="container">
-            <div class="footer-top footer-padding">
-                <!-- Footer Menu -->
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="single-footer-caption mb-50 text-center">
-                            <!-- logo -->
-                            <div class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                            </div>
-                            <!-- Menu -->
-                            <!-- Header Start -->
-                            <div class="header-area main-header2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                                <div class="main-header main-header2">
-                                    <div class="menu-wrapper menu-wrapper2">
-                                        <!-- Main-menu -->
-                                        <div class="main-menu main-menu2 text-center">
-                                            <nav>
-                                                <ul>
-                                                    <li><a href="index.html">Home</a></li>
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="services.html">Services</a></li>
-                                                    <!-- <li><a href="pricing.html">Pricing</a></li> -->
-                                                    <li><a href="gallery.html">Gallery</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>   
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Header End -->
-                            <!-- social -->
-                            <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">
-                                <a href="https://www.instagram.com/componentsoffitness/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.facebook.com/login/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.youtube.com/channel/UCoKnXuFR4xNfkK3U4CqPV7Q/" target="_blank"><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <div class="row d-flex align-items-center">
-                    <div class="col-lg-12">
-                        <div class="footer-copy-right text-center">
-                            <p>
-                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by Components of Fitness <i class="fa fa-heart" aria-hidden="true"></i>
-                            </p>
-                          </div>
+                      <div class="features-caption">
+                          <h3>Location</h3>
+                          <p>Plot 59, Shakti Khand 2, Indirapuram, Ghaziabad, Uttar Pradesh - 201014</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                  <div class="single-services mb-40">
+                      <div style="width: 78px; height: 78px; background-color: red; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                          <i class="fas fa-phone" style="color: white; font-size: 36px;"></i>
+                           </div>
+                      <div class="features-caption">
+                          <h3>Phone</h3>
+                          <p>+91 8476080018</p>
+                          <!-- <p>  (78) 267 256 2578</p> -->
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                  <div class="single-services mb-40">
+                      <div class="features-icon">
+                          <img src="assets/img/icon/icon3.svg" alt="">
+                      </div>
+                      <div class="features-caption">
+                          <h3>Email</h3>
+                          <p>componentsoffitness7@gmail.com</p>
                       </div>
                   </div>
               </div>
           </div>
       </div>
-      <!-- Footer End-->
-  </footer>
-  <!-- Scroll Up -->
-  <div id="back-top" >
-    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+  </section>
+</main>
+<footer>
+  <!--? Footer Start-->
+  <div class="footer-area black-bg">
+      <div class="container">
+          <div class="footer-top footer-padding">
+              <!-- Footer Menu -->
+              <div class="row">
+                  <div class="col-xl-12">
+                      <div class="single-footer-caption mb-50 text-center">
+                          <!-- logo -->
+                          <div class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                              <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                          </div>
+                          <!-- Menu -->
+                          <!-- Header Start -->
+                          <div class="header-area main-header2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
+                              <div class="main-header main-header2">
+                                  <div class="menu-wrapper menu-wrapper2">
+                                      <!-- Main-menu -->
+                                      <div class="main-menu main-menu2 text-center">
+                                          <nav>
+                                              <ul>
+                                                  <li><a href="index.html">Home</a></li>
+                                                  <li><a href="about.html">About</a></li>
+                                                  <li><a href="services.html">Services</a></li>
+                                                  <!-- <li><a href="pricing.html">Pricing</a></li> -->
+                                                  <li><a href="gallery.html">Gallery</a></li>
+                                                  <li><a href="contact.html">Contact</a></li>
+                                              </ul>
+                                          </nav>
+                                      </div>   
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- Header End -->
+                          <!-- social -->
+                          <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">
+                              <a href="https://www.instagram.com/componentsoffitness/" target="_blank"><i class="fab fa-instagram"></i></a>
+                              <a href="https://www.facebook.com/login/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                              <a href="https://www.youtube.com/channel/UCoKnXuFR4xNfkK3U4CqPV7Q/" target="_blank"><i class="fab fa-youtube"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+              <div class="row d-flex align-items-center">
+                  <div class="col-lg-12">
+                      <div class="footer-copy-right text-center">
+                          <p>
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by Components of Fitness <i class="fa fa-heart" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End-->
+</footer>
+<!-- Scroll Up -->
+<div id="back-top" >
+  <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
 </div>
 
 <!-- WhatsApp Button -->
 <div>  
-    <a href="https://wa.me/8476080018" class="whatsapp-float" target="_blank">
-          <i class="fa fa-whatsapp whatsapp-icon"></i>
-        </a>
-        
-        <style>
-        .whatsapp-float {
-          position: fixed;
-          width: 60px;
-          height: 60px;
-          bottom: 80px;
-          right: 30px;
-          background-color: #25D366;
-          color: #FFF;
-          border-radius: 40px;
-          text-align: center;
-          font-size: 40px;
-          box-shadow: 2px 2px 3px #999;
-          z-index: 100;
-        }
-        
-        .whatsapp-icon {
-          margin-top: 8px;
-        }
-        </style>
-        
-        <!-- Add Font Awesome for the icon -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      </div>
-
-      <div>
-        <a href="tel:+91 8476080018" class="call-button" traget="_blank">
-        <i class="fa fa-phone"></i></a>
-
-        <style>
-            .call-button {
-                position: fixed;
-                width: 60px;
-                height: 60px;
-                bottom: 150px;
-                right: 30px;
-                background-color: #000000;
-                color: #0088ff;
-                border-radius: 40px;
-                text-align: center;
-                font-size: 40px;
-                z-index: 100;
-            }
-        
-            .call-button:hover {
-              background-color: #00bfff;
-            /* .phone {
-             margin-top: 8px; */
-            }
-          </style>   
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.cs">
-          
+  <a href="https://wa.me/8476080018" class="whatsapp-float" target="_blank">
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
+      
+      <style>
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 80px;
+        right: 30px;
+        background-color: #25D366;
+        color: #FFF;
+        border-radius: 40px;
+        text-align: center;
+        font-size: 40px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+      }
+      
+      .whatsapp-icon {
+        margin-top: 8px;
+      }
+      </style>
+      
+      <!-- Add Font Awesome for the icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </div>
+
+    <div>
+      <a href="tel:+91 8476080018" class="call-button" traget="_blank">
+      <i class="fa fa-phone"></i></a>
+
+      <style>
+          .call-button {
+              position: fixed;
+              width: 60px;
+              height: 60px;
+              bottom: 150px;
+              right: 30px;
+              background-color: #000000;
+              color: #0088ff;
+              border-radius: 40px;
+              text-align: center;
+              font-size: 40px;
+              z-index: 100;
+          }
+      
+          .call-button:hover {
+            background-color: #00bfff;
+          /* .phone {
+           margin-top: 8px; */
+          }
+        </style>   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.cs">
+        
+  </div>
 
 <!-- JS here -->
 
