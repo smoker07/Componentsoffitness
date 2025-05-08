@@ -5385,40 +5385,40 @@ hr {
 
 /* line 714, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .blog_right_sidebar .widget_title {
-  font-size: 20px;
-  margin-bottom: 40px;
+  /* font-size: 20px;
+  margin-bottom: 40px; */
 }
 
 /* line 719, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .blog_right_sidebar .widget_title::after {
-  content: "";
+  /* content: "";
   display: block;
   padding-top: 15px;
-  border-bottom: 1px solid #f0e9ff;
+  border-bottom: 1px solid #f0e9ff; */
 }
 
 /* line 727, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .blog_right_sidebar .single_sidebar_widget {
-  background: #fbf9ff;
+  /* background: #fbf9ff;
   padding: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
 }
 
 /* line 731, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .blog_right_sidebar .single_sidebar_widget .btn_1 {
-  margin-top: 0px;
+  /* margin-top: 0px; */
 }
 
 /* line 739, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .blog_right_sidebar .search_widget .form-control {
-  height: 50px;
+  /* height: 50px;
   border-color: #f0e9ff;
   font-size: 13px;
   color: #999999;
   padding-left: 20px;
   border-radius: 0;
   border-right: 0;
-}
+} */
 
 /* line 748, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .blog_right_sidebar .search_widget .form-control::placeholder {
