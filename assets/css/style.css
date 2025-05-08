@@ -6158,8 +6158,8 @@ hr {
 /* line 10, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .contact-info {
   margin-top: 25px;
-  margin-left: 500px;
-  margin-right: auto;
+  margin-left: 100px;
+  /* margin-right: 200px; */
 }
 
 /* line 13, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
@@ -6194,16 +6194,15 @@ hr {
 /*=================== contact banner end ====================*/
 /*=================== contact form start ====================*/
 /* line 45, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
-.contact-title {
+/* .contact-title {
   font-size: 48px;
-  /* font-weight: 600; */
+  font-weight: 600; 
   max-width: 90% auto;
   margin: 10px auto;
-  margin-left: 1100px;
-  /* margin-bottom: center;
+  margin-bottom: center;
   margin-left: 400px;
-  align-content: center; */
-}
+  align-content: center; 
+} */
 
 /* line 53, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .form-contact label {
@@ -6222,7 +6221,7 @@ hr {
 /* line 61, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .form-contact .form-control {
   border: 1px solid #5c5c5c;
-  border-radius: 0px;
+  border-radius: 15px;
   height: 48px;
   /* padding-left: 18px; */
   font-size: 13px;
