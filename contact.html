@@ -95,6 +95,53 @@
         </div>
     </div>  
     
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+    
+        aside {
+          position: fixed;
+          top: 50%;
+          right: 10%;
+          transform: translateY(-50%);
+          width: 150px;
+          z-index: 1000;
+        }
+    
+        aside img {
+          width: 100%;
+          animation: float 3s ease-in-out infinite;
+        }
+    
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(-10px);
+          }
+          80% {
+            transform: translateY(10px);
+          }
+        }
+    
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+          aside {
+            width: 150px;
+            top: auto;
+            bottom: 10px;
+            transform: none;
+          }
+          aside img {
+            width: 100%;
+          }
+        }
+      </style>
+        
+      <aside>
+        <img src="assets/img/components of fitness_logo.png" alt="Animated image">
+      </aside>
+
     <div class="col-lg-3 offset-lg-1">
         <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-home"></i></span>

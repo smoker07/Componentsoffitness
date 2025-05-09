@@ -97,6 +97,53 @@
         </div>
     </div>
     <!-- Hero End -->
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+    
+        aside {
+          position: fixed;
+          top: 80%;
+          bottom: 50%;
+          right: 15%;
+          transform: translateY(-50%);
+          width: 150px;
+          z-index: 1000;
+        }
+    
+        aside img {
+          width: 100%;
+          animation: float 3s ease-in-out infinite;
+        }
+    
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(-10px);
+          }
+          80% {
+            transform: translateY(10px);
+          }
+        }
+    
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+          aside {
+            width: 150px;
+            top: auto;
+            bottom: 10px;
+            transform: none;
+          }
+          aside img {
+            width: 100%;
+          }
+        }
+      </style>
+        
+      <aside>
+        <img src="assets/img/components of fitness_logo.png" alt="Animated image">
+      </aside>
     <!--? Blog Area Start-->
     <section class="blog_area section-padding">
         <div class="container">

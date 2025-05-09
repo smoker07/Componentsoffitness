@@ -5399,9 +5399,9 @@ hr {
 
 /* line 727, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .blog_right_sidebar .single_sidebar_widget {
-  /* background: #fbf9ff;
+  background: #fbf9ff;
   padding: 30px;
-  margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 
 /* line 731, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
@@ -5411,14 +5411,15 @@ hr {
 
 /* line 739, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .blog_right_sidebar .search_widget .form-control {
-  /* height: 50px;
+  height: 50px;
   border-color: #f0e9ff;
   font-size: 13px;
   color: #999999;
-  padding-left: 20px;
+  padding-left: 80px;
+  margin-top: 20px;
   border-radius: 0;
   border-right: 0;
-} */
+} 
 
 /* line 748, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .blog_right_sidebar .search_widget .form-control::placeholder {
@@ -6157,14 +6158,13 @@ hr {
 
 /* line 10, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .contact-info {
-  margin-top: 25px;
-  margin-left: 100px;
-  /* margin-right: 200px; */
+  margin-bottom: 25px;
+  margin-top: 20px;
 }
 
 /* line 13, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .contact-info__icon {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 /* line 16, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
@@ -6176,14 +6176,14 @@ hr {
 /* line 24, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .contact-info .media-body h3 {
   font-size: 16px;
-  margin-bottom: auto;
+  margin-bottom: 0;
   font-size: 16px;
   color: #2a2a2a;
 }
 
 /* line 30, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .contact-info .media-body h3 a:hover {
-  color: #1eff00;
+  color: #1f2b7b;
 }
 
 /* line 36, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
@@ -6194,36 +6194,33 @@ hr {
 /*=================== contact banner end ====================*/
 /*=================== contact form start ====================*/
 /* line 45, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
-/* .contact-title {
+ .contact-title {
   font-size: 48px;
   font-weight: 600; 
-  max-width: 90% auto;
-  margin: 10px auto;
-  margin-bottom: center;
-  margin-left: 400px;
-  align-content: center; 
-} */
+  margin-bottom: 20px;
+  margin-left: 400px; 
+} 
 
 /* line 53, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
-.form-contact label {
-  font-size: 24px;
-  margin-left: 40px;
-  align-content: center;
+.form-contact label 
+{
+  font-size: 14px;
 }
 
 /* line 57, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
-.form-contact .form-group {
-  margin-bottom: 30px;
-  margin-left: 350px;
-  align-items: center;
+.form-contact .form-group
+{
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin: center;
 }
 
 /* line 61, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_contact.scss */
 .form-contact .form-control {
   border: 1px solid #5c5c5c;
-  border-radius: 15px;
+  border-radius: 0px;
   height: 48px;
-  /* padding-left: 18px; */
+  padding-left: 18px;
   font-size: 13px;
   background: transparent;
 }
