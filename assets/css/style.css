@@ -3437,7 +3437,7 @@ hr {
   background-image: url(../img/hero/h1_hero.png);
   background-repeat: no-repeat;
   background-position: top center;
-  /* background-size: %; */
+  background-size: cover;
   background-attachment: fixed;
 }
 
