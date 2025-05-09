@@ -3390,7 +3390,43 @@ hr {
 
 /* line 31, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
 .slider-area2 {
-  background-image: url(../img/hero/hero2.png);
+  background-image: url(../img/hero/hero_about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-area3 {
+  background-image: url(../img/hero/hero_gallery.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-area4 {
+  background-image: url(../img/hero/hero_blog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-area5 {
+  background-image: url(../img/hero/hero_services.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-area6 {
+  background-image: url(../img/hero/hero_contactus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-area7 {
+  background-image: url(../img/hero/hero_blog1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-area8 {
+  background-image: url(../img/hero/hero_faq.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
