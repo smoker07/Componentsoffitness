@@ -3392,43 +3392,43 @@ hr {
 .slider-area2 {
   background-image: url(../img/hero/hero_about.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .slider-area3 {
   background-image: url(../img/hero/hero_gallery.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .slider-area4 {
   background-image: url(../img/hero/hero_blog.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .slider-area5 {
   background-image: url(../img/hero/hero_services.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .slider-area6 {
   background-image: url(../img/hero/hero_contactus.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .slider-area7 {
   background-image: url(../img/hero/hero_blog1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .slider-area8 {
   background-image: url(../img/hero/hero_faq.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 /* line 37, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
@@ -3437,7 +3437,7 @@ hr {
   background-image: url(../img/hero/h1_hero.png);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
 }
 
@@ -3446,12 +3446,12 @@ hr {
   overflow: hidden;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+/* @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* line 44, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
   .slider-area .hero__caption {
     padding-top: 80px;
   }
-}
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 44, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
@@ -3472,7 +3472,7 @@ hr {
   .slider-area .hero__caption {
     padding-top: 80px;
   }
-}
+} */
 
 /* line 58, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
 .slider-area .hero__caption span {
@@ -3721,6 +3721,54 @@ hr {
 
 /* line 230, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
 .slider-area2 .hero-cap h2 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.slider-area3 .hero-cap h2 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.slider-area4 .hero-cap h2 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.slider-area5 .hero-cap h2 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.slider-area6 .hero-cap h2 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.slider-area7 .hero-cap h2 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.slider-area8 .hero-cap h2 {
   color: #fff;
   font-size: 70px;
   font-weight: 700;
